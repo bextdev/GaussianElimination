@@ -3,7 +3,7 @@ package com.bextdev.GaussianElimination;
 public class GaussianElimination {
     private Matrix matrix;
     private GaussianEliminationHelper gaussianEliminationHelper;
-    private BackSubstitutionHelper backSubstitutionHelper;
+    private BackSubstitution backSubstitution;
 
     // Method to solve the system of equations Ax = b
     public static double[] solve(double[][] A, double[] b) {
@@ -13,7 +13,7 @@ public class GaussianElimination {
         gaussianEliminationHelper.performGaussianElimination(matrix);
 
         // Perform back substitution
-        return backSubstitutionHelper.performBackSubstitution(matrix);
+        return backSubstitution.performBackSubstitution(matrix);
     }
 
     public static String getSolution() {
