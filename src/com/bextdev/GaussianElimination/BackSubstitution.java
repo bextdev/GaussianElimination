@@ -1,6 +1,6 @@
 package com.bextdev.GaussianElimination;
 
-public class BackSubstitutionHelper {
+public class BackSubstitution {
     private Matrix matrix;
 
     // Method to perform back substitution
