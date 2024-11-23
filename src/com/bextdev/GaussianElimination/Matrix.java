@@ -1,3 +1,5 @@
+package com.bextdev.GaussianElimination;
+
 public class Matrix {
     private double[][] augmentedMatrix;
     private int n;
