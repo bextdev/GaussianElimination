@@ -1,14 +1,19 @@
+package com.bextdev.GaussianElimination;
+
 public class GaussianElimination {
+    private Matrix matrix;
+    private GaussianEliminationHelper gaussianEliminationHelper;
+    private BackSubstitutionHelper backSubstitutionHelper;
 
     // Method to solve the system of equations Ax = b
     public static double[] solve(double[][] A, double[] b) {
-        Matrix matrix = new Matrix(A, b);
+        matrix = new Matrix(A, b);
 
         // Perform Gaussian elimination
-        GaussianEliminationHelper.performGaussianElimination(matrix);
+        gaussianEliminationHelper.performGaussianElimination(matrix);
 
         // Perform back substitution
-        return BackSubstitutionHelper.performBackSubstitution(matrix);
+        return backSubstitutionHelper.performBackSubstitution(matrix);
     }
 
     public static String getSolution() {
