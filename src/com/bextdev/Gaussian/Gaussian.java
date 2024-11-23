@@ -1,7 +1,7 @@
 /**
  * This extension is created by Bextdev at 11/23/2024.
  * 
- * The Gaussian class serves as the main entry point for solving systems of linear equations
+ * The Gaussian class serves as the main entry point for solving systems of rankings of matrix.
  * using Gaussian Elimination within the MIT App Inventor environment.
  */
 
