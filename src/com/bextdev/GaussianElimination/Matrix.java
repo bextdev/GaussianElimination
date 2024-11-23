@@ -25,8 +25,7 @@ public class Matrix {
         return n;
     }
 
-    // Utility method to print matrix (for debugging)
-    public void printMatrix() {
+    public void getMatrix() {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n + 1; j++) {
                 return augmentedMatrix[i][j] + " ";
