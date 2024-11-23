@@ -1,3 +1,5 @@
+import com.bextdev.GaussianElimination;
+
 public class MatrixOperations {
 
     // Method to swap two rows in a matrix
