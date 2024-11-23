@@ -1,7 +1,10 @@
+package com.bextdev.GaussianElimination;
+
 public class BackSubstitutionHelper {
+    private Matrix matrix;
 
     // Method to perform back substitution
-    public static double[] performBackSubstitution(Matrix matrix) {
+    public static double[] performBackSubstitution() {
         int n = matrix.getSize();
         double[][] augmentedMatrix = matrix.getAugmentedMatrix();
         double[] result = new double[n];
